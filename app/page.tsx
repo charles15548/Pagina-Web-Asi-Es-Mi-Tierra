@@ -110,9 +110,8 @@ export default function RestaurantPage() {
               por S/10.
             </h2>
             <p>
-              Cada día preparamos, por lo general, dos opciones de segundo.
-              Puede tocar seco de res, pollo al horno, adobo de lechón o pavita
-              al sillao. Pregúntanos qué hay hoy antes de venir.
+              Cada día preparamos, por lo mejor del menú.
+
             </p>
             <a
               className="text-link"
@@ -250,11 +249,7 @@ export default function RestaurantPage() {
                 <br />
                 Ven a almorzar.
               </h2>
-              <p>
-                {restaurant.address}
-                <br />
-                Cerca de la playa Cívica.
-              </p>
+              
                  <div className="location-map">
                 <iframe
                   title="Ubicación de Restaurante Asi Es Mi Tierra en Leoncio Prado, Ancón"
@@ -288,6 +283,13 @@ export default function RestaurantPage() {
                 <span>MEDIOS DE PAGO</span>
                 <p>Efectivo · Yape · Plin · Tarjetas</p>
               </div>
+                            <div>
+                <span>UBICACIÓN</span> 
+<p>
+                {restaurant.address}
+                <br />
+                Cerca de la playa Cívica.
+              </p>  </div>
             </div>
           </div>
         </section>
