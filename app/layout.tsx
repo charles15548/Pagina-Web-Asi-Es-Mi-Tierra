@@ -8,12 +8,12 @@ const description = "Menú criollo a S/10, picantería y cevichería en Leoncio 
 export const metadata: Metadata = {
   title,
   description,
-  applicationName: "Restaurante Asi Es Mi Tierra",
+  applicationName: "Restaurante Así es mi Tierra",
   ...(siteUrl ? { metadataBase: new URL(siteUrl), alternates: { canonical: "/" } } : {}),
   openGraph: {
     title,
     description,
-    siteName: "Restaurante Asi Es Mi Tierra",
+    siteName: "Restaurante Así es mi Tierra",
     locale: "es_PE",
     type: "website",
     ...(siteUrl ? { url: siteUrl, images: [{ url: `${siteUrl}/images/fachada.jpeg`, width: 1600, height: 1200, alt: "Restaurante Así es mi Tierra en Ancón" }] } : {}),

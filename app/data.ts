@@ -1,5 +1,5 @@
 export const restaurant = {
-  name: "Restaurante Asi Es Mi Tierra",
+  name: "Restaurante Así es mi Tierra",
   phone: "51936040189",
   address: "Leoncio Prado, Mz. 78 Lt. 23 · Ancón 15123",
   maps: "https://www.google.com/maps/search/?api=1&query=-11.7321775,-77.1425642",
@@ -17,7 +17,7 @@ export type Dish = {
 
 export const dishes: Dish[] = [
   // Segundos del letrero: son opciones rotativas, no el menú de hoy.
-  { name: "Guiso de pollo", category: "Menú", description: "  Consulta el acompañamiento disponible hoy." },
+  { name: "Guiso de pollo", category: "Menú", description: "Consulta el acompañamiento disponible hoy." },
   //{ name: "Estofado de pavita", category: "Menú", description: "Pavita en estofado, entre las opciones rotativas del menú." },
   { name: "Arroz chaufa", category: "Menú", description: " " },
   { name: "Arroz a la cubana", category: "Menú", description: "" },
@@ -29,9 +29,9 @@ export const dishes: Dish[] = [
 
   // Platos extra del letrero y especialidades confirmadas por el dueño.
   { name: "Lomo saltado", category: "Criollos", description: "Un clásico de nuestra carta criolla." },
-  { name: "Bisteck a lo pobre", category: "Criollos", description: "Uno de los platos extra de nuestra pizarra." },
+  { name: "Bistec a lo pobre", category: "Criollos", description: "Uno de los platos extra de nuestra pizarra." },
   { name: "Pollo a la plancha", category: "Criollos", description: "", suggested: false },
-  { name: "Tallarin Saltado", category: "Criollos", description: " ", suggested: false },
+  { name: "Tallarín saltado", category: "Criollos", description: " ", suggested: false },
   
   { name: "Picante de cuy", category: "Criollos", description: "Una de nuestras especialidades y de los platos extra del letrero." },
   { name: "Trucha frita", category: "Criollos", description: "Trucha frita de nuestra carta de picantería." },

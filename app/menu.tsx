@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { dishes, whatsapp } from "./data";
 
-const categories = ["Todos", "Menú", "Criollos",   "Marinos"];
+const categories = ["Todos", "Menú", "Criollos", "Marinos"];
 const introductions: Record<string, string> = {
   "Menú": "Menú completo a S/10: entrada, segundo y refresco.",
   Criollos: "Platos a la carta y extras de nuestra pizarra. Consulta el precio de cada plato.",
@@ -66,7 +66,7 @@ export default function Menu() {
       <p className="sr-only" role="status">
         {visible.length} platos en {category.toLowerCase()}.
       </p>
-      <div className="menu-book chalkboard" id="carta-platos">
+      <div className="menu-book chalkboard" id="carta-platos" key={category}>
         {categories
           .slice(1)
           .filter((item) => category === "Todos" || category === item)
@@ -88,13 +88,13 @@ export default function Menu() {
                             Opción sugerida · por confirmar
                           </span>
                         )}
-                        <p>{dish.description}</p>
+                        {dish.description.trim() && <p>{dish.description.trim()}</p>}
                       </div>
                       <a
                         className="dish-order"
                         href={whatsapp(
                           dish.category === "Menú"
-                            ? `Hola, ¿hoy tienen ${dish.name} como segundo del menú de S/10? Quisiera pedir para recoger.`
+                            ? `Hola, ¿hoy tienen ${dish.name} como menú? Quisiera pedir para recoger.`
                             : dish.suggested
                               ? `Hola, ¿preparan ${dish.name}? Quisiera consultar disponibilidad y precio.`
                               : `Hola, quisiera consultar el precio y la disponibilidad de ${dish.name} para recoger.`,

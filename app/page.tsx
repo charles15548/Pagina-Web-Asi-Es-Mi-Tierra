@@ -110,7 +110,7 @@ export default function RestaurantPage() {
               por S/10.
             </h2>
             <p>
-              Cada día preparamos, por lo mejor del menú.
+              Cada día preparamos distintas opciones de segundo con nuestra sazón casera. Consulta el menú de hoy por WhatsApp.
 
             </p>
             <a
@@ -160,7 +160,7 @@ export default function RestaurantPage() {
               </div>
               <p>
                 Revisa los segundos del menú o elige un plato criollo, de picantería o marino. Puedes consultar
-                cada plato directamente por WhatsApp y coordinar tu recojo.
+                cada plato directamente por WhatsApp y coordinar el recojo de tu pedido.
               </p>
             </div>
             <Menu />
@@ -189,14 +189,14 @@ export default function RestaurantPage() {
             <span>Una mesa siempre te espera.</span>
           </div>
           <div>
-            <span className="eyebrow">Restaurante Asi Es Mi Tierra</span>
+            <span className="eyebrow">Restaurante Así es mi Tierra</span>
             <h2>
               De nuestra cocina
               <br />a tu mesa.
             </h2>
             <p>
               Este restaurante nació para compartir platos del Perú, hechos con
-               mucha sazón. El picante de cuy, el lomo saltado y los
+              mucha sazón. El picante de cuy, el lomo saltado y los
               platos marinos tienen su lugar en nuestra carta.
             </p>
             <p>
@@ -252,7 +252,7 @@ export default function RestaurantPage() {
               
                  <div className="location-map">
                 <iframe
-                  title="Ubicación de Restaurante Asi Es Mi Tierra en Leoncio Prado, Ancón"
+                  title="Ubicación de Restaurante Así es mi Tierra en Leoncio Prado, Ancón"
                   src="https://www.google.com/maps?q=-11.7321775,-77.1425642&z=17&hl=es&output=embed"
                   width="600"
                   height="360"
